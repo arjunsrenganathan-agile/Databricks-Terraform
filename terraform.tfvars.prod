@@ -1,0 +1,8 @@
+# Production Environment Configuration
+prefix       = "contoso"
+instance     = "001"
+location     = "australiaeast"
+project_name = "Databricks Infrastructure"
+
+# Production uses premium SKU
+databricks_sku = "premium"

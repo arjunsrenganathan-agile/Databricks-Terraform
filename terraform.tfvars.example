@@ -1,0 +1,11 @@
+# Example Terraform variables
+# Copy this file to terraform.tfvars and customize values
+
+prefix       = "contoso"
+instance     = "001"
+environment  = "dev"           # Change to "prod" for production
+location     = "australiaeast"
+project_name = "Databricks Infrastructure"
+
+# For production environments, consider using "premium" SKU
+databricks_sku = "premium"    # Options: standard, premium, trial

@@ -1,0 +1,8 @@
+# Staging Environment Configuration
+prefix       = "contoso"
+instance     = "001"
+location     = "australiaeast"
+project_name = "Databricks Infrastructure"
+
+# Staging uses premium SKU for testing production features
+databricks_sku = "premium"

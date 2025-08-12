@@ -1,0 +1,29 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+.terraform.lock.hcl
+
+# Variable files with sensitive data (keep environment-specific ones)
+terraform.tfvars
+*.auto.tfvars
+# But keep the environment-specific template files
+!terraform.tfvars.dev
+!terraform.tfvars.staging
+!terraform.tfvars.prod
+
+# Environment files
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# Log files
+*.log

@@ -1,0 +1,8 @@
+# Development Environment Configuration
+prefix       = "contoso"
+instance     = "001"
+location     = "australiaeast"
+project_name = "Databricks Infrastructure"
+
+# Development uses standard SKU
+databricks_sku = "premium"

@@ -37,9 +37,33 @@ variable "databricks_sku" {
   description = "SKU for Databricks workspace"
   type        = string
   default     = "premium"
-
   validation {
     condition     = contains(["standard", "premium", "trial"], var.databricks_sku)
     error_message = "Databricks SKU must be one of: standard, premium, trial."
   }
+}
+
+# Azure Authentication Variables
+variable "azure_client_id" {
+  description = "Azure Client ID for authentication"
+  type        = string
+  sensitive   = true
+}
+
+variable "azure_client_secret" {
+  description = "Azure Client Secret for authentication"
+  type        = string
+  sensitive   = true
+}
+
+variable "azure_tenant_id" {
+  description = "Azure Tenant ID for authentication"
+  type        = string
+  sensitive   = true
+}
+
+variable "azure_subscription_id" {
+  description = "Azure Subscription ID"
+  type        = string
+  sensitive   = true
 }

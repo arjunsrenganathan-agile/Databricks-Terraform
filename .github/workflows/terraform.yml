@@ -1,4 +1,4 @@
-name: 'Terraform Azure Databricks CI/CD'
+name: 'Terraform Azure Databricks CI/CD' 
 
 on:
   push:
